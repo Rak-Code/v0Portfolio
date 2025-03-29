@@ -12,17 +12,17 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center space-x-3">
-            <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/Rak-Code" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" aria-label="GitHub">
                 <Github className="h-5 w-5" />
               </Button>
             </Link>
-            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.linkedin.com/in/rakesh-gupta-developer/" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5" />
               </Button>
             </Link>
-            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://x.com/RakeshG33139449" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" aria-label="Twitter">
                 <Twitter className="h-5 w-5" />
               </Button>

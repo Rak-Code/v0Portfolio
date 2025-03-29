@@ -1,33 +1,41 @@
-import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Github, ExternalLink } from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
+import {
+  Card,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Github, ExternalLink } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce application built with Spring Boot and React.",
+      title: "E-Commerce Clothing Platform",
+      description:
+        "Implementing authentication, role-based access, and an admin dashboard. Implemented RESTful APIs for product management, shopping cart. Integrated AI Chatbot to assist users. Payment Integration using Razor pay. Added Email Notifications for payment confirmation and order updates.",
       image: "/placeholder.svg?height=200&width=400",
-      github: "https://github.com",
-      demo: "https://demo-link.com",
+      github: "https://github.com/Rak-Code/Athena",
+      demo: "https://github.com/Rak-Code/Athena",
     },
     {
-      title: "Task Management System",
-      description: "A Java-based task management system with RESTful API endpoints.",
+      title: "Personal Portfolio Website",
+      description:
+        "Developed a responsive portfolio using React.js and Tailwind CSS, deployed on Netlify. Integrated a contact form with emails, achieving a successful delivery rate",
       image: "/placeholder.svg?height=200&width=400",
-      github: "https://github.com",
-      demo: "https://demo-link.com",
+      github: "https://github.com/Rak-Code/rakportfolio",
+      demo: "https://rak-code.github.io/rakportfolio/",
     },
     {
-      title: "Personal Finance Tracker",
-      description: "A web application to track personal expenses and income.",
+      title: "Customer Feedback System",
+      description: "Developed a Customer Feedback System using Spring Boot, React, and MySQL with role-based access control for admins and customers. Admins can post topics, and customers can provide feedback. Feedback is visible to admins for review and analysis.",
       image: "/placeholder.svg?height=200&width=400",
-      github: "https://github.com",
-      demo: "https://demo-link.com",
+      github: "https://github.com/RakCode/customerfeedbackfront",
+      demo: "https://github.com/RakCode/customerfeedbackfront",
     },
-  ]
+  ];
 
   return (
     <section id="projects" className="py-16">
@@ -57,13 +65,21 @@ export default function Projects() {
               </CardHeader>
               <CardFooter className="flex justify-between">
                 <Button variant="outline" size="sm" asChild>
-                  <Link href={project.github} target="_blank" rel="noopener noreferrer">
+                  <Link
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Github className="h-4 w-4 mr-2" />
                     Code
                   </Link>
                 </Button>
                 <Button size="sm" asChild>
-                  <Link href={project.demo} target="_blank" rel="noopener noreferrer">
+                  <Link
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <ExternalLink className="h-4 w-4 mr-2" />
                     Demo
                   </Link>
@@ -74,6 +90,5 @@ export default function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
